@@ -1,19 +1,55 @@
-.navbar{
- 
-    display:flex;
-}
-.navbar-ul{
-    list-style-type:none;
-    display:flex
-}
-.navbar-ul > li{
-    margin-left:30px
+.body{
+    font-family:helvetica;
 }
 
-.navbar-ul a{
-    text-decoration: none;
-    color:#3C3C3C
+.navbar {
+	overflow: hidden;
+    margin-right:100px;
+    margin-left:100px;
+    margin-top:40px;
+
 }
+
+#logo{
+    font-size:35px;
+    font-weight:bold;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+@media screen and (max-width: 640px){
+    .navbar > a{
+        display:none;
+      
+    }
+    #logo{
+        display:block;
+        font-size:35px;
+        font-weight:bold;
+    }
+}
+
+
+.navbar .login-container {
+	float: right;
+}
+.signup{
+    background-color: #8EE5D1;
+    border-radius:30px;
+    font-size:25px;
+    width:100px;
+    color:#3C3C3C;
+    outline:none;
+    border:2px solid white;
+}
+
 
 
 .main-content{
@@ -23,6 +59,15 @@
     /* margin-right:50px */
     margin-top:100px;
     align-items : center;
+}
+@media screen and (max-width: 640px){
+    .main-content{
+        flex-direction:column;
+        margin-left:20px
+    }
+    .writing{
+        width:100%;
+    }
 }
 
 .writing{
@@ -84,6 +129,12 @@
     border:2px solid #F4F7FA;
 }
 
+@media screen and (max-width: 640px){
+    #book-a-demo{
+        width:500px;
+        margin-top:20px;
+    }
+}
 .choose{
     text-align:center;
 }
@@ -116,10 +167,40 @@
     margin:30px;
     padding:40px;
     font-size:20px;
+    border-radius: 10px;
 }
+@media screen and (max-width: 640px){
+    .three-boxes{
+        display:flex;
+        flex-direction:column;
+    }
 
+}
 
 .footer{
     background-color: #F4F7FA;
-    height:200px
+    height:200px;
+    margin-top:100px;
+}
+
+.footer-left{
+    padding-top:30px;
+    padding-left:100px;
+    float:left;
+}
+
+.footer-right{
+    padding-top:30px;
+    padding-right:100px;
+    text-align:right;
+}
+
+
+#contact{
+    font-weight:bold
+}
+
+@media screen and (max-width: 640px){
+
+
 }
