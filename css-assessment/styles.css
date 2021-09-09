@@ -93,4 +93,33 @@
 }
 #answer{
     font-size:25px;
+    color:#3C3C3C;
+}
+
+.three-boxes{
+    display:flex;
+}
+#number{
+    color:#8EE5D1;
+    font-weight:bold;
+    font-size:40px;
+}
+
+
+#ans-heading{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.first ,.second,.third{
+    background-color: #F4F7FA;
+    margin:30px;
+    padding:40px;
+    font-size:20px;
+}
+
+
+.footer{
+    background-color: #F4F7FA;
+    height:200px
 }
